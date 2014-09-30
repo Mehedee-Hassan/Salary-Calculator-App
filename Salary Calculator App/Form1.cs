@@ -23,11 +23,18 @@ namespace Salary_Calculator_App
         private void showMeSalaryButton_Click(object sender, EventArgs e)
         {
             aSalaryCalculator = new SalaryCalculator();
+            //or 
+            //aSalaryCalculator = new SalaryCalculator(employeeNameTextBox.Text,
+            //                                           Convert.ToDouble(basicAccountTextBox.Text),
+            //                                           Convert.ToDouble(houseRentTextBox.Text),
+            //                                           Convert.ToDouble(medicalAllowanceTextBox.Text));
 
-            aSalaryCalculator.name = employeeNameTextBox.Text;
-            aSalaryCalculator.basicAccount = Convert.ToDouble(basicAccountTextBox.Text);
-            aSalaryCalculator.houseRent = Convert.ToDouble(houseRentTextBox.Text);
-            aSalaryCalculator.medicalAllowance = Convert.ToDouble(medicalAllowanceTextBox.Text);
+
+
+            aSalaryCalculator.Name= employeeNameTextBox.Text;
+            aSalaryCalculator.BasicAccount = Convert.ToDouble(basicAccountTextBox.Text);
+            aSalaryCalculator.HouseRentPercent = Convert.ToDouble(houseRentTextBox.Text);
+            aSalaryCalculator.MedicalAllowancePercent = Convert.ToDouble(medicalAllowanceTextBox.Text);
 
             //double salary = aSalaryCalculator.CalculateSalary();
             ShowSalary();

@@ -7,3 +7,6 @@ c:\users\acer\documents\visual studio 2013\Projects\Salary Calculator App\Salary
 c:\users\acer\documents\visual studio 2013\Projects\Salary Calculator App\Salary Calculator App\obj\Debug\Salary Calculator App.csproj.GenerateResource.Cache
 c:\users\acer\documents\visual studio 2013\Projects\Salary Calculator App\Salary Calculator App\obj\Debug\Salary Calculator App.exe
 c:\users\acer\documents\visual studio 2013\Projects\Salary Calculator App\Salary Calculator App\obj\Debug\Salary Calculator App.pdb
+C:\Users\Mhr\Desktop\project to githib\Salary-Calculator-App\Salary Calculator App\bin\Debug\Salary Calculator App.exe.config
+C:\Users\Mhr\Desktop\project to githib\Salary-Calculator-App\Salary Calculator App\obj\Debug\Salary Calculator App.exe
+C:\Users\Mhr\Desktop\project to githib\Salary-Calculator-App\Salary Calculator App\obj\Debug\Salary Calculator App.pdb

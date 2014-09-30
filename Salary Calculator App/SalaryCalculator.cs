@@ -8,16 +8,63 @@ namespace Salary_Calculator_App
 {
     class SalaryCalculator
     {
-        public string name;
-        public double basicAccount;
-        public double houseRent;
-        public double medicalAllowance;
+        private double basicAccount;
+        private double houseRentPercent;
+        private double medicalAllowancePercent;
+
+        public string Name { get; set; }
+
+
+
+
+        public SalaryCalculator()
+        {
+            
+        }
+
+        public SalaryCalculator(string name , double basicAccount ,double houseRentPercent ,double medicalAllowancePercent )
+        {
+            this.Name = name;
+            this.basicAccount = basicAccount;
+            this.houseRentPercent = houseRentPercent;
+            this.medicalAllowancePercent = medicalAllowancePercent;
+        }
+
 
         public double CalculateSalary()
         {
-
-            
-                         return basicAccount+(basicAccount*((houseRent / 100) + (medicalAllowance / 100)));
+            return basicAccount + (basicAccount * (GethouseRentPercentCalculated() + GetMedicalAllowanceCalculated()));
         }
+
+
+        private double GethouseRentPercentCalculated()
+        {
+            return (houseRentPercent/100);
+        }
+
+        private double GetMedicalAllowanceCalculated()
+        {
+            return (medicalAllowancePercent/100);
+        }
+
+        public double HouseRentPercent
+        {
+            set { houseRentPercent = value; }
+        }
+
+
+
+        public double MedicalAllowancePercent
+        {
+           
+            set { medicalAllowancePercent = value; }
+        }
+
+        public double BasicAccount
+        {
+           
+            set { basicAccount = value; }
+        }
+
     }
 }
